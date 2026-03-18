@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- 맨 위로 이동 버튼 -->
+     <button id="backtotop" title="gototop">TOP</button>
+
     <!-- 헤더영역 -->
     <header class="header">
       <div class="header-container">
@@ -17,7 +21,7 @@
         <nav class="nav">
           <ul>
             <li><a href="#">회사소개</a></li>
-            <li><a href="#">택배서비스</a></li>
+            <li><a href="#delivery-section">택배서비스</a></li>
             <li><a href="#">교통/주차</a></li>
             <li><a href="#">시설안내</a></li>
             <li><a href="#">공지사항</a></li>
@@ -97,6 +101,10 @@
                   <span class="dot normal"></span> 17:50 (23)출발 동양 고속버스
                   서울→광주
                 </li>
+                <li class="status-item">
+                  <span class="dot normal"></span>17:58 (23)출발 동양 고속버스
+                  서울→광주
+                </li>
               </ul>
             </div>
             <button class="search-btn">버스조회</button>
@@ -116,9 +124,44 @@
           </a>
         </div>
       </div>
+     </div>
     </main>
 
     <script src="https://jsdelivr.net"></script>
     <script src="js/script.js"></script>
+
+    <!-- 제로데이 택배 섹션 -->
+  
+          <section id="delivery-section" class="delivery-section">
+            <div class="banner-container">
+              <!-- 왼쪽 텍스트 정보 영역 -->
+               <div class="delivery-info">
+                <img src="assets/icons/zero_icon_logo.png" alt="제로데이로고" class="deliverylogo">
+                <p class="zero-sub-text">집에서 집으로, 오늘 받는 고속배송</p>
+                <h2 class="zero-main-text">제로데이 택배 <a href="#" class="zero-btn-detail">자세히 알아보기</a></h2>
+               </div>
+
+               <!-- 카테고리 태그 -->
+                <div class="hashtag-group">
+                  <span>#터미널안가도돼요</span>
+                  <span>#집앞픽업서비스</span>
+                  <span>#고속버스택배</span>
+                </div>
+
+<!-- 앱다운로드 -->
+ <div class="app-download-area">
+  <a href="#" class="qr-image-link">
+  <img src="assets/images/zeroday-box-download.png" alt="안드로이드 및 ios 설치">
+  </a>
+ </div>
+
+
+                 <!-- 우측 버튼 2개 -->
+                  <div class="zero-btn">
+                    <button class="btn-track">택배 조회</button>
+                    <button class="btn-apply">신청 하기</button>
+                  </div>
+            </div>
+          </section>
   </body>
 </html>
