@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/images/background_01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* 헤더 전체 박스 조절 */
+.header-container {
+  max-width: 100%; /* 1400px 제한 해제 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+/* 헤더 로고 */
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* 네비게이션 */
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.lang-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-menu img {
+  width: 20px;
+  height: auto;
+}
+
+/* 메인 콘텐츠 */
+.main-content {
+  padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 승차권조회 */
+.booking-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 👈 stretch 대신 이걸 써야 아래쪽 간격이 딱 붙습니다 */
+  gap: 0px;
+  width: 95%;
+  max-width: 1500px;
+  margin: 50px auto 0;
+}
+
+.bus-box {
+  background-color: white;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 0px 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+  position: relative;
+  margin-top: 50px;
+  position: relative;
+  padding: 40px 40px 20px;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 편도 왕복 버튼 */
+.bus-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  transform: translateY(-100%);
+}
+/* 편도 */
+.tab-one {
+  background-color: #ffa74e;
+  color: white;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px 10px 0 0;
+  font-family: "KoPubWorldDotumBold";
+  cursor: pointer;
+}
+/* 왕복 */
+.tab-roof {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+/* 출발지->도착지 */
+.bus-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.start-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.end-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gray;
+  z-index: 2;
+}
+
+/* 버스아이콘 화살표 도시 아이콘 css */
+.bg-icon-bus {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow img {
+  width: 80px;
+  height: auto;
+}
+
+.bg-icon-city {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.place {
+  font-size: 32px;
+  font-family: "KoPubWorldDotBold";
+  color: black;
+}
+
+/* 일정 날짜 바 */
+.day-bar {
+  display: flex;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: -43px 0 15px 0;
+}
+
+.day_icon {
+  width: 20px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.day-bar span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+/* 실시간 운행상황 */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 15px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.live-status-container {
+  flex: 2.2;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.status-title {
+  font-size: 14px;
+  line-height: 1.3;
+  border-right: 1px solid #555;
+  padding-right: 30px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.status-item :last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.relaxed {
+  background-color: #4caf50;
+}
+
+.dot.normal {
+  background-color: #ffeb3b;
+}
+.dot.full {
+  boackground-color: #f44336;
+}
+
+/* 버스조회 버튼 */
+.search-btn {
+  flex: 1;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ffa74e;
+  min-height: 60px;
+}
+/* 승차권 조회버튼 */
+.side-ticket {
+  flex: 1;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.side-ticket img {
+  width: 100%;
+  height: auto; /* 👈 부모 높이를 100% 사용 */
+  object-fit: contain; /* 👈 이미지 비율 무시하고 꽉 채우기 (원본 느낌) */
+  border-radius: 30px;
+  max-height: 380px;
+}
+
+.side-ticket img:hover {
+  transform: scale(1.02);
+}

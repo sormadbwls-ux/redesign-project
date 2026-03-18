@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리디자인 프로젝트</title>
+    <link rel="stylesheet" href="https://jsdelivr.net" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 헤더영역 -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="#"><img src="assets/icons/Logo_01.png" alt="로고" /></a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">택배서비스</a></li>
+            <li><a href="#">교통/주차</a></li>
+            <li><a href="#">시설안내</a></li>
+            <li><a href="#">공지사항</a></li>
+            <li>
+              <a href="#" class="lang-menu">
+                <img src="assets/icons/korea_icon.png" alt="KOR" />
+                <span>KOR</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- 💡 왼쪽 박스와 오른쪽 승차권 버튼을 묶어주는 래퍼 -->
+      <div class="booking-wrapper">
+        <!-- 왼쪽 예약 박스 -->
+        <div class="bus-box">
+          <!-- 1. 편도 왕복 탭 (박스 위로 띄움) -->
+          <div class="bus-tabs">
+            <button class="tab-one">편도</button>
+            <button class="tab-roof">왕복</button>
+          </div>
+
+          <!-- 2. 출발지/도착지 영역 -->
+          <div class="bus-content">
+            <div class="start-select">
+              <div class="location">
+                <span class="label">출발지</span>
+                <strong class="place">서울경부</strong>
+              </div>
+              <img
+                src="assets/icons/main_icon_bus.png"
+                class="bg-icon-bus"
+                alt="버스아이콘"
+              />
+            </div>
+
+            <div class="arrow">
+              <img src="assets/icons/bus_arrow_01.png" alt="화살표" />
+            </div>
+
+            <div class="end-select">
+              <div class="location">
+                <span class="label">도착지</span>
+                <strong class="place">선택</strong>
+              </div>
+              <img
+                src="assets/icons/main_icon_city.png"
+                class="bg-icon-city"
+                alt="도시아이콘"
+              />
+            </div>
+          </div>
+
+          <!-- 3. 날짜 정보 바 -->
+          <div class="day-bar">
+            <img
+              src="assets/icons/day_icon_01.png"
+              alt="달력"
+              class="day_icon"
+            />
+            <span>가는날 2026.02.04(수) | 7시</span>
+          </div>
+
+          <!-- 4. 하단 (실시간 운행조회 + 버스조회 버튼) -->
+          <div class="bottom-section">
+            <div class="live-status-container">
+              <div class="status-title">실시간<br />운행상황</div>
+              <ul class="status-list">
+                <li class="status-item">
+                  <span class="dot relaxed"></span> 17:50 (4)출발 천일 고속버스
+                  서울→목포
+                </li>
+                <li class="status-item">
+                  <span class="dot normal"></span> 17:50 (23)출발 동양 고속버스
+                  서울→광주
+                </li>
+              </ul>
+            </div>
+            <button class="search-btn">버스조회</button>
+          </div>
+        </div>
+
+        <!-- 오른쪽 긴 승차권 버튼 -->
+        <div class="side-ticket">
+          <a href="#" class="ticket-link">
+            <div class="ticket-inner">
+              <img
+                src="assets/icons/ticket_check_iconbus.png"
+                alt="버스아이콘"
+              />
+              <span class="ticket-text">승차권<br />조회</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://jsdelivr.net"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* 로컬 폰트 사용하기 css basic */
+@font-face {
+  font-family: "KoPubWorldDotumBold";
+  src: url("../assets/fonts/KoPubWorld\ Dotum\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldDotumLight";
+  src: url("../assets/fonts/KoPubWorld\ Dotum\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KoPubWorldDotumMedium";
+  src: url("../assets/fonts/KoPubWorld\ Dotum\ Medium.ttf") format("truetype");
+}
