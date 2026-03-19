@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>승차권 조회</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- 1. 폰트 파일 연결 (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://jsdelivr.net" />
+
+    <!-- 2. 내 CSS 파일 연결 -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="ticket-page">
+    <div class="ticket-header">
+      <h2><img src="assets/icons/bus_white.png" alt="" /> 승차권 조회</h2>
+      <a href="#" class="info-link">승차홈 위치 안내 &gt;</a>
+    </div>
+
+    <!-- 티켓 전체 영역 -->
+    <div class="ticket-container">
+      <!-- [왼쪽] QR 영역 -->
+      <div class="ticket-left">
+        <div class="qr-content">
+          <img src="assets/icons/qr_code.png" alt="QR코드" class="qr-img" />
+          <button class="btn-zoom">
+            <img src="assets/icons/TicketCheck_Btn_zoom.png" alt="" />
+          </button>
+          <p class="bus-type">등급 : 우등(프리미엄)<br />운행회사 : 금호고속</p>
+        </div>
+        <button class="btn-gift">
+          <img src="assets/icons/TicketCheck_Btn_gift.png" alt="" /> 승차권
+          선물하기
+        </button>
+      </div>
+
+      <!-- [오른쪽] 상세 정보 영역 -->
+      <div class="ticket-right">
+        <div class="route-info">
+          <div class="city">서울경부</div>
+          <div class="arrow">→</div>
+          <div class="city">대구한진</div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="info-box">
+            <span class="label">출발일</span>
+            <strong class="value highlight">2026.01.20</strong>
+          </div>
+          <div class="info-box">
+            <span class="label">출발시간</span>
+            <strong class="value">23:50</strong>
+          </div>
+          <div class="info-box">
+            <span class="label">승차홈</span>
+            <strong class="value">21</strong>
+          </div>
+          <div class="info-box">
+            <span class="label">좌석번호</span>
+            <strong class="value">13A</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 하단 버튼 -->
+    <div class="action-buttons">
+      <button class="btn-edit">시간변경</button>
+      <button class="btn-cancel">예매취소</button>
+    </div>
+  </body>
+</html>

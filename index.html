@@ -112,19 +112,16 @@
         </div>
 
         <!-- 오른쪽 긴 승차권 버튼 -->
-        <div class="side-ticket">
-          <a href="#" class="ticket-link">
-            <div class="ticket-inner">
-              <img
-                src="assets/icons/ticket_check_iconbus.png"
-                alt="버스아이콘"
-              />
-              <span class="ticket-text">승차권<br />조회</span>
-            </div>
-          </a>
-        </div>
-      </div>
-     </div>
+       <div class="side-ticket">
+  <a href="ticket_check.html" class="ticket-link">
+    <!-- 이미지 태그를 지우고 배경으로 쓸 준비를 합니다 -->
+    <div class="ticket-inner">
+      <!-- 이 이미지는 '버스 아이콘' 이미지만 넣으세요! -->
+      <img src="assets/icons/ticket_check_iconbus.png" alt="버스아이콘" class="ticket-icon" />
+      <span class="ticket-text">승차권<br />조회</span>
+    </div>
+  </a>
+</div>
     </main>
 
     <script src="https://jsdelivr.net"></script>
@@ -138,7 +135,7 @@
                <div class="delivery-info">
                 <img src="assets/icons/zero_icon_logo.png" alt="제로데이로고" class="deliverylogo">
                 <p class="zero-sub-text">집에서 집으로, 오늘 받는 고속배송</p>
-                <h2 class="zero-main-text">제로데이 택배 <a href="#" class="zero-btn-detail">자세히 알아보기</a></h2>
+                <h2 class="zero-main-text">제로데이 택배 <a href="#" class="zero-btn-detail"> &gt; 자세히 알아보기</a></h2>
                </div>
 
                <!-- 카테고리 태그 -->
@@ -150,17 +147,24 @@
 
 <!-- 앱다운로드 -->
  <div class="app-download-area">
-  <a href="#" class="qr-image-link">
   <img src="assets/images/zeroday-box-download.png" alt="안드로이드 및 ios 설치">
   </a>
  </div>
 
-
                  <!-- 우측 버튼 2개 -->
                   <div class="zero-btn">
-                    <button class="btn-track">택배 조회</button>
-                    <button class="btn-apply">신청 하기</button>
+<a href="https://zerodayexpress.com" target="_blank" class="btn-track">
+    택배 조회
+  </a>
+
+  <!-- 2. 신청 하기 버튼 (같은 주소로 이동하도록 설정) -->
+  <a href="https://zerodayexpress.com" target="_blank" class="btn-apply">
+    신청 하기
+  </a>
                   </div>
+
+<!----------------------------교통정보 페이지---------------------------------->
+
             </div>
           </section>
   </body>
