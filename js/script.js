@@ -13,3 +13,13 @@ window.onscroll = function () {
 topBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// 편도 왕복 버튼 클릭스 버튼 전환 js //
+const tabs = document.querySelectorAll(".tab-btn");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+    tabs.forEach((t) => t.classList.remove("active")); // 모든 버튼에서 주황색 뺌
+    this.classList.add("active"); // 클릭한 버튼에만 주황색 넣음
+  });
+});
