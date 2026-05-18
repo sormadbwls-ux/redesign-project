@@ -80,6 +80,6 @@ mindmap
 
 | 구분 | 링크/정보 |
 |---|---|
-| **Email** | your-email@example.com |
+| **Email** | sormadbwls@naver.com |
 | **GitHub Repository** | [sormadbwls-ux/redesign-project](https://github.com) |
 | **배포 사이트** | [리디자인 웹 사이트 바로가기](https://sormadbwls-ux.github.io/redesign-project/) |
